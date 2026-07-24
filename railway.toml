@@ -1,6 +1,6 @@
 [build]
-builder = "nixpacks"
+builder = "dockerfile"
 
 [deploy]
-startCommand = "pip install -r server/requirements.txt && python -m uvicorn server.main:app --host 0.0.0.0 --port $PORT"
+startCommand = ""
 healthcheckPath = "/health"
