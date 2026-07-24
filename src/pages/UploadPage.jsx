@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Spinner from '../components/Spinner'
 import '../App.css'
 
-const API = 'http://127.0.0.1:8000'
+const API = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
 export default function UploadPage() {
   const [file, setFile] = useState(null)

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import '../App.css'
 
-const API = 'http://localhost:8000'
+const API = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
 // Default form values so the user sees a pre-filled example
 const defaults = {
